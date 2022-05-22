@@ -1,0 +1,40 @@
+baseURL = 'https://nicolasfarabegoli.it/'
+languageCode = 'en-us'
+title = 'Nicolas Farabegoli'
+
+PygmentsCodeFences = true
+# Enable to turn relative URLs into absolute
+canonifyURLs = true
+# Do not convert the url/path to lowercase
+disablePathToLower = false
+# Enable Emoji emoticons support for page content
+enableEmoji = true
+# Update the `Lastmod` parameter for each page using the last git commit date for that content file
+enableGitInfo = true
+# Enable generation of `robots.txt` file
+enableRobotsTXT = true
+
+googleAnalytics = "G-7ZYEQEMMHH"
+
+theme = "awesome-identity"
+
+[params.profile]
+  portrait = "1652119247764.jpeg" 
+  firstname = "Nicolas"
+  lastname = "Farabegoli"
+  title = "Master student in Computer Science and Engineering @ Unibo" 
+  bio = """"""
+
+[params.contacts]
+  email = "nicolas.farabegoli@gmail.com"
+  github = "nicolasfara"
+  gitlab = "nic0lasfara"
+  linkedin = "nicolas-farabegoli"
+
+[[params.actions]]
+  name = "Review My CV"
+  url = "https://github.com/nicolasfara/Curriculum-Vitae/releases/latest"
+
+[params.footer]
+  copyright = "© 2022 Nicolas Farabegoli. [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)."
+  poweredBy = true
