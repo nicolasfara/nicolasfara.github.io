@@ -14,7 +14,7 @@ enableGitInfo = true
 # Enable generation of `robots.txt` file
 enableRobotsTXT = true
 
-googleAnalytics = "G-7ZYEQEMMHH"
+googleAnalytics = "G-XTK7SE6G4F"
 
 theme = "awesome-identity"
 
