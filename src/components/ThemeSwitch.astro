@@ -13,12 +13,18 @@ import Theme from "@/icons/themeSwitch.astro";
 	</div> -->
 
 	<div class="group/theme flex items-center gap-2">
-		<label for="themeSwitch" class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45"> <Theme /></label>
-		<select id="themeSwitch" name="themeSwitch" class="focus:ring-skin-hue ring-skin-muted block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-skin-base ring-1 ring-inset focus:ring-2 sm:text-sm sm:leading-6">
-			<option value="system">System</option>
-			<option value="dark">Dark</option>
-			<option value="light">Light</option>
-		</select>
+		<label for="themeSwitch" class="flex items-center gap-1 text-sm font-medium leading-6 text-skin-base transition-transform ease-in-out group-hover/theme:rotate-45">
+			<Theme />
+		</label>
+		</span>
+		<button id="themeSwitch" type="button" aria-label="Toggle dark mode"
+			class="theme-toggle relative w-12 h-6 rounded-full transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-skin-hue
+				bg-gray-300 dark:bg-gray-700">
+			<span class="sr-only">Toggle dark mode</span>
+			<span class="toggle-thumb absolute left-0 top-0 w-6 h-6 rounded-full shadow-md transform transition-transform duration-300
+				bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700"></span>
+		</button>
+		</button>
 	</div>
 
 	<style>
@@ -28,28 +34,45 @@ import Theme from "@/icons/themeSwitch.astro";
 	</style>
 
 	<script>
-		const select = document.getElementById("themeSwitch") as HTMLSelectElement;
-		const theme = localStorage.getItem("theme");
-		const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+		window.addEventListener('DOMContentLoaded', () => {
+			const button = document.getElementById("themeSwitch") as HTMLElement | null;
+			const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+			let theme: string = localStorage.getItem("theme") || systemTheme;
 
-		if (theme !== null) {
-			select.value = theme;
-		} else {
-			select.value = systemTheme;
-		}
+			function setTheme(newTheme: string) {
+				theme = newTheme;
+				updateThumb();
+				document.documentElement.classList.remove("light", "dark");
+				document.documentElement.classList.add(newTheme);
+				localStorage.setItem("theme", newTheme);
+			}
 
-		function updateTheme(value: string) {
-			const theme = value === "system" ? systemTheme : value;
-			document.documentElement.classList.remove("light", "dark");
-			document.documentElement.classList.add(theme);
-			localStorage.setItem("theme", value);
-		}
+			function updateThumb() {
+				if (!button) return;
+				const thumb = button.querySelector('.toggle-thumb') as HTMLElement | null;
+				if (!thumb) return;
+				if (theme === "dark") {
+					thumb.style.transform = "translateX(100%)";
+				} else {
+					thumb.style.transform = "translateX(0)";
+				}
+			}
 
-		updateTheme(select.value);
+			setTheme(theme);
 
-		select.addEventListener("change", (event: Event) => {
-			const select = event.target as HTMLSelectElement;
-			updateTheme(select.value);
+			button?.addEventListener("click", () => {
+				setTheme(theme === "dark" ? "light" : "dark");
+			});
+
+			// Ensure toggle updates if theme changes outside the button
+			const observer = new MutationObserver(() => {
+				const currentTheme = document.documentElement.classList.contains("dark") ? "dark" : "light";
+				if (theme !== currentTheme) {
+					theme = currentTheme;
+					updateThumb();
+				}
+			});
+			observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
 		});
 	</script>
 </div>

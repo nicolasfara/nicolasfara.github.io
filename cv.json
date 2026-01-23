@@ -1,107 +1,69 @@
 {
   "basics": {
-    "name": "John Doe",
-    "label": "Junior Full Stack Developer",
+    "name": "Nicolas Farabegoli",
+    "label": "Software Engineer, Researcher, PhD Student",
     "image": "/me_avatar.jpg",
-    "email": "john.doe@example.com",
-    "phone": "+1 555-555-5555",
-    "url": "https://johndoe.dev",
-    "summary": "Junior Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
+    "email": "nicolas.farabegoli@gmail.com",
+    "phone": "+39 340-2876022",
+    "url": "https://nicolasfarabegoli.it",
+    "github": "nicolasfara",
+    "birth": "1997-10-20",
+    "address": "via Bagalona, 599 Bertinoro (FC)",
+    "positions": ["Software Engineer", "Researcher", "PhD Student"],
+    "summary": "Researcher and software engineer with experience in aggregate computing, edge-cloud continuum, and open-source development. Published and presented over 10 papers in international conferences and journals. Lead developer of multiple frameworks and platforms for distributed and embedded systems.",
     "theme": "default",
     "location": {
-      "address": "",
-      "postalCode": "10001",
-      "city": "Auckland",
-      "countryCode": "NZ",
-      "region": "New Zealand"
+      "address": "via Bagalona, 599",
+      "postalCode": "47032",
+      "city": "Bertinoro",
+      "countryCode": "IT",
+      "region": "Emilia-Romagna"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "john-doe",
-        "url": "https://linkedin.com/in/john-doe"
-      },
-      {
-        "network": "X",
-        "username": "john-doe",
-        "url": "https://x.com/john-doe"
+        "username": "nfarabegoli",
+        "url": "https://linkedin.com/in/nfarabegoli"
       },
       {
         "network": "GitHub",
-        "username": "johndoe",
-        "url": "https://github.com/johndoe"
+        "username": "nicolasfara",
+        "url": "https://github.com/nicolasfara"
       }
     ]
   },
   "work": [
     {
-      "name": "Tech Startup",
-      "position": "Junior Web Developer",
-      "location_type": "On site",
-      "location": "Auckland, New Zealand",
-      "url": "https://techstartup.com",
-      "startDate": "2024-01-01",
+      "name": "Caseificio Mambelli S.r.l.",
+      "position": "IT Consultant",
+      "location": "Bertinoro, Italy",
+      "startDate": "2021-03-01",
       "endDate": null,
-      "summary": "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs.",
-      "highlights": [
-        "Improved website performance by optimizing code"
-      ],
-      "responsibilities": [
-        "Collaborated with senior developers to design and implement web applications using modern JavaScript frameworks.",
-        "Assisted in debugging and optimizing front-end code to ensure smooth user experiences.",
-        "Participated in code reviews and contributed to improving coding standards within the team."
-      ],
-      "achievements": [
-        "Developing and maintaining web applications using JavaScript, HTML, and CSS. Collaborating with the team to implement new features and fix bugs."
-      ],
-      "skills": [
-        "React",
-        "Tailwind",
-        "GitHub"
-      ]
+      "summary": "Implemented Active Directory and Windows Server infrastructure for centralized user management. Migrated legacy file storage to a structured NAS solution. Configured automated backup systems, reducing data recovery time from days to hours. Advised on GDPR compliance and implemented basic cybersecurity measures (firewall rules, access policies)."
     },
     {
-      "name": "Innovative Solutions",
-      "position": "Junior Software Developer",
-      "location_type": "Hybrid",
-      "location": "Wellington, New Zealand",
-      "url": "https://innovativesolutions.com",
-      "startDate": "2022-06-01",
-      "endDate": "2023-06-01",
-      "summary": "Assisting in the development and maintenance of software applications using Python and Django. Collaborating with cross-functional teams to ensure quality and timely delivery of software solutions.",
-      "highlights": [
-        "Contributed to a major project that streamlined internal workflows, improving efficiency by 30%"
-      ],
-      "responsibilities": [
-        "Developed and maintained backend services using Python and Django.",
-        "Worked closely with front-end developers to integrate user-facing elements with server-side logic.",
-        "Participated in daily stand-ups and bi-weekly sprint planning meetings to ensure alignment with project goals."
-      ],
-      "achievements": [
-        "Successfully implemented a feature that enhanced user authentication, improving security measures."
-      ],
-      "skills": [
-        "Python",
-        "Django",
-        "SQL",
-        "Git"
-      ]
+      "name": "SCM Group",
+      "position": "Advanced Linux Course Instructor",
+      "location": "Rimini, Italy",
+      "startDate": "2024-11-01",
+      "endDate": "2024-11-30",
+      "summary": "Taught advanced Linux aspects to company engineers. Covered topics such as package managers, graphic servers & graphical environments, Yocto Project for embedded Linux systems."
     },
     {
-      "name": "Web Agency",
-      "position": "Intern Web Developer",
-      "location_type": "Remote",
-      "location": "Sydney, Australia",
-      "startDate": "2022-06-01",
-      "endDate": "2022-12-01",
-      "summary": "Assisted in developing client websites and applications. Gained hands-on experience with front-end and back-end technologies.",
-      "highlights": [
-        "Completed several client projects successfully"
-      ],
-      "skills": [
-        "HTML",
-        "CSS"
-      ]
+      "name": "Alma Mater Studiorum - University of Bologna",
+      "position": "Tutor",
+      "location": "Cesena, Italy",
+      "startDate": "2020-01-01",
+      "endDate": null,
+      "summary": "Teaching assistant for courses: Object-Oriented Programming, Distributed Systems, Laboratory of Software Systems. Supporting students with programming and software engineering concepts."
+    },
+    {
+      "name": "Alma Mater Studiorum - University of Bologna",
+      "position": "Research Fellow",
+      "location": "Cesena, Italy",
+      "startDate": "2022-04-01",
+      "endDate": "2022-10-01",
+      "summary": "Continuation of Master's thesis research. Focus on application decomposition and deployment in edge-cloud environments finalizing the Pulvreakt framework."
     }
   ],
   "volunteer": [
@@ -119,196 +81,105 @@
   ],
   "education": [
     {
-      "institution": "State University",
-      "url": "https://stateuniversity.edu",
-      "area": "Computer Science",
-      "studyType": "Bachelor",
-      "startDate": "2018-09-01",
-      "endDate": "2022-05-01",
-      "score": "3.8",
-      "courses": [
-        "CS101 - Introduction to Computer Science",
-        "CS102 - Data Structures"
-      ]
+      "institution": "Alma Mater Studiorum - University of Bologna",
+      "area": "Computer Science and Engineering",
+      "studyType": "Ph.D.",
+      "location": "Cesena, Italy",
+      "startDate": "2022-11-01",
+      "endDate": null,
+      "description": "Research on Aggregate Computing, Deployment models for Cyber-Physical Systems, Edge-Cloud Continuum. Published and presented over 10 papers in international conferences and journals."
     },
     {
-      "institution": "Tech Institute",
-      "url": "https://techinstitute.edu",
-      "area": "Software Engineering",
-      "studyType": "Master",
+      "institution": "Alma Mater Studiorum - University of Bologna",
+      "area": "Computer Science and Engineering",
+      "studyType": "Master's Degree",
+      "location": "Cesena, Italy",
       "startDate": "2020-09-01",
-      "endDate": "2022-12-01",
-      "score": "3.9",
-      "courses": [
-        "SE201 - Advanced Software Development",
-        "SE202 - Software Architecture and Design"
-      ]
+      "endDate": "2023-03-01",
+      "score": "110/110 cum laude",
+      "description": "Thesis: Design and Implementation of a Portable Framework for Application Decomposition and Deployments in the Cloud-Edge Systems"
     },
     {
-      "institution": "City College",
-      "url": "https://citycollege.edu",
-      "area": "Information Technology",
-      "studyType": "Associate Degree",
-      "startDate": "2017-01-01",
-      "endDate": "2019-12-01",
-      "score": "3.7",
-      "courses": [
-        "IT101 - Networking Fundamentals",
-        "IT102 - Database Management Systems"
-      ]
+      "institution": "Alma Mater Studiorum - University of Bologna",
+      "area": "Computer Science and Engineering",
+      "studyType": "Bachelor's Degree",
+      "location": "Cesena, Italy",
+      "startDate": "2016-09-01",
+      "endDate": "2020-03-01",
+      "description": "Thesis: An optimized implementation of the Dirac operator on GPGPU"
+    },
+    {
+      "institution": "Istituto Tecnico Tecnologico Statale B. Pascal",
+      "area": "Electronics and Automation",
+      "studyType": "High School Diploma",
+      "location": "Cesena, Italy",
+      "startDate": "2011-09-01",
+      "endDate": "2016-07-01"
     }
   ],
   "certificates": [
-    {
-      "name": "Full Stack Web Development",
-      "date": "2023-05-01",
-      "issuer": "Online University",
-      "url": "https://onlineuniversity.com/certificates/fullstack"
-    }
+
   ],
   "skills": [
-    {
-      "name": "Figma",
-      "level": "Expert",
-      "keywords": [
-        "Design",
-        "UI"
-      ]
-    },
-    {
-      "name": "Gitlab",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
-    },
-    {
-      "name": "HTML",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend"
-      ]
-    },
-    {
-      "name": "CSS",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Responsive Design"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "Fullstack"
-      ]
-    },
-    {
-      "name": "Tailwind",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "CSS Framework",
-        "Responsive Design"
-      ]
-    },
-    {
-      "name": "TypeScript",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "Backend",
-        "JavaScript Superset"
-      ]
-    },
-    {
-      "name": "Node",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Backend",
-        "JavaScript",
-        "Server"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Intermediate",
-      "keywords": [
-        "Databases",
-        "SQL",
-        "Data Storage",
-        "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Intermediate",
-      "keywords": [
-        "Version Control",
-        "Collaboration",
-        "Source Code",
-        "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Beginner",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "React Framework",
-        "SSR",
-        "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Intermediate",
-      "keywords": [
-        "Web Development",
-        "Frontend",
-        "JavaScript Library",
-        "UI"
-      ]
-    }
+    {"name": "C", "level": 3, "category": "Programming Languages"},
+    {"name": "C++", "level": 3, "category": "Programming Languages"},
+    {"name": "Bash", "level": 3, "category": "Programming Languages"},
+    {"name": "Java", "level": 4, "category": "Programming Languages"},
+    {"name": "JavaScript", "level": 3, "category": "Programming Languages"},
+    {"name": "Kotlin", "level": 5, "category": "Programming Languages"},
+    {"name": "Python", "level": 3, "category": "Programming Languages"},
+    {"name": "Rust", "level": 2, "category": "Programming Languages"},
+    {"name": "Scala", "level": 5, "category": "Programming Languages"},
+    {"name": "TypeScript", "level": 3, "category": "Programming Languages"},
+    {"name": "Android", "level": 4, "category": "Technologies & Tools"},
+    {"name": "Ansible", "level": 3, "category": "Technologies & Tools"},
+    {"name": "Docker", "level": 4, "category": "Technologies & Tools"},
+    {"name": "Embedded Rust", "level": 3, "category": "Technologies & Tools"},
+    {"name": "Git", "level": 5, "category": "Technologies & Tools"},
+    {"name": "GitHub Actions", "level": 4, "category": "Technologies & Tools"},
+    {"name": "Gradle", "level": 4, "category": "Technologies & Tools"},
+    {"name": "Kubernetes", "level": 2, "category": "Technologies & Tools"},
+    {"name": "Linux", "level": 4, "category": "Technologies & Tools"},
+    {"name": "MQTT", "level": 4, "category": "Technologies & Tools"},
+    {"name": "Proxmox VE", "level": 3, "category": "Technologies & Tools"},
+    {"name": "Sbt", "level": 4, "category": "Technologies & Tools"},
+    {"name": "Yocto Project", "level": 3, "category": "Technologies & Tools"},
+    {"name": "Akka", "category": "Frameworks & Paradigms"},
+    {"name": "Arduino", "category": "Frameworks & Paradigms"},
+    {"name": "Cats", "category": "Frameworks & Paradigms"},
+    {"name": "Cats Effect", "category": "Frameworks & Paradigms"},
+    {"name": "FP", "category": "Frameworks & Paradigms"},
+    {"name": "Ktor", "category": "Frameworks & Paradigms"},
+    {"name": "OOP", "category": "Frameworks & Paradigms"},
+    {"name": "Raspberry Pi", "category": "Frameworks & Paradigms"},
+    {"name": "React", "category": "Frameworks & Paradigms"},
+    {"name": "Spark", "category": "Frameworks & Paradigms"},
+    {"name": "Spring Boot", "category": "Frameworks & Paradigms"},
+    {"name": "STM32 HAL", "category": "Frameworks & Paradigms"},
+    {"name": "FreeCAD", "category": "Applications"},
+    {"name": "Fusion 360", "category": "Applications"},
+    {"name": "IntelliJ IDEA", "category": "Applications"},
+    {"name": "Kicad", "category": "Applications"},
+    {"name": "Visual Studio Code", "category": "Applications"}
   ],
   "languages": [
     {
-      "language": "English",
-      "fluency": "Native speaker"
+      "language": "Italian",
+      "fluency": "Native"
     },
     {
-      "language": "Spanish",
-      "fluency": "Intermediate"
+      "language": "English",
+      "fluency": "Fluent in writing and speaking"
     }
   ],
   "interests": [
     {
-      "name": "Technology",
-      "keywords": [
-        "AI",
-        "Blockchain"
-      ]
+      "name": "Tech",
+      "keywords": ["Open Source Contribution", "Robotics", "3D Printing", "PCB Design", "Electronics"]
+    },
+    {
+      "name": "Outdoor Activities",
+      "keywords": ["Hiking", "MTB", "Tennis"]
     }
   ],
   "references": [
@@ -319,46 +190,53 @@
   ],
   "projects": [
     {
-      "name": "Personal Portfolio",
-      "isActive": false,
-      "description": "A personal portfolio website to showcase my projects and skills.",
-      "highlights": [
-        "Built with React and Tailwind CSS",
-        "Includes a blog and contact form"
-      ],
-      "url": "https://johndoe.dev",
-      "github": "https://github.com"
-    },
-    {
-      "name": "Weather App",
+      "name": "Pulvreakt",
       "isActive": true,
-      "description": "A web application that provides weather information for any location.",
-      "highlights": [
-        "Built with JavaScript and OpenWeatherMap API",
-        "Responsive design"
-      ],
-      "url": "https://weatherapp.com"
+      "description": "A Kotlin Multiplatform framework for pulverized systems. Enables deployment of aggregate computing applications across edge-cloud continuum.",
+      "highlights": ["Lead Developer"],
+      "url": "https://github.com/pulvreakt/pulvreakt"
     },
     {
-      "name": "Task Manager",
+      "name": "Collektive",
       "isActive": true,
-      "description": "A simple task management app to keep track of daily tasks.",
-      "highlights": [
-        "Built with Node.js and MongoDB",
-        "User authentication and CRUD operations"
-      ],
-      "url": "https://taskmanager.com",
-      "github": "https://github.com"
+      "description": "Aggregate computing framework written in Kotlin multiplatform. Compiler plugin for managing aggregate programs.",
+      "highlights": ["Lead Developer"],
+      "url": "https://github.com/Collektive/collektive"
     },
     {
-      "name": "E-commerce Site",
-      "isActive": false,
-      "description": "An online store built with Next.js and Stripe for payment processing.",
-      "highlights": [
-        "Product management and shopping cart functionality",
-        "Secure payment integration"
-      ],
-      "url": "https://ecommerce.com"
+      "name": "ScaFi 3",
+      "isActive": true,
+      "description": "Scala 3 re-implementation of the ScaFi framework. Effect-based DSL for engineering collective adaptive systems.",
+      "highlights": ["Lead Developer"],
+      "url": "https://github.com/scafi/scafi3"
+    },
+    {
+      "name": "MkTT",
+      "isActive": true,
+      "description": "A Kotlin Multiplatform, asynchronous, flow-based MQTT client library.",
+      "highlights": ["Creator and Maintainer"],
+      "url": "https://github.com/nicolasfara/mktt"
+    },
+    {
+      "name": "Project Emerge",
+      "isActive": true,
+      "description": "Initiative to provide a low-cost, open-source swarm robotics platform. Designed and developed PCB, firmware, and software architecture. Focus on education and research in swarm robotics and collective systems.",
+      "highlights": ["Creator and Maintainer"],
+      "url": "https://github.com/Project-Emerge"
+    },
+    {
+      "name": "Rover Firmware",
+      "isActive": true,
+      "description": "Rust firmware for the Project Emerge rover robot. Features modular, event-driven architecture for easy extension and customization.",
+      "highlights": ["Creator and Maintainer"],
+      "url": "https://github.com/Project-Emerge/rover-firmware"
+    },
+    {
+      "name": "Yaair",
+      "isActive": true,
+      "description": "Aggregate Computing DSL implementation in Rust. Designed to be fast, memory-safe, and suitable for embedded systems.",
+      "highlights": ["Creator and Maintainer"],
+      "url": "https://github.com/nicolasfara/yaair"
     }
   ]
 }
