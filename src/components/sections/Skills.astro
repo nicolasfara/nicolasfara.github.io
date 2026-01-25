@@ -24,34 +24,58 @@ for (const skill of skills) {
   groupedSkills[cat].push(skill);
 }
 const groupedEntries = Object.entries(groupedSkills);
+
+// Extract Primary Languages section if present
+const primarySkills = groupedSkills['Primary Languages'] || [];
+const otherEntries = groupedEntries.filter(([category]) => category !== 'Primary Languages');
 ---
 
 
 <Section className={Astro.props.className} title="Skills">
-  {
-    groupedEntries.map(([category, skillsInCategory]) => (
-      <div class="mb-6">
-        <h3 class="mb-2 text-base font-semibold text-skin-accent print:text-zinc-800">{category}</h3>
-        <ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-2 [&>li>svg]:size-5 [&>li]:text-sm">
-          {
-            skillsInCategory.map((skill) => {
-              const { name, faIcon } = skill;
-              let iconObj = null;
-              if (faIcon) {
-                const iconKey = "fa" + faIcon.charAt(0).toUpperCase() + faIcon.slice(1).replace(/-([a-z])/g, (_, c) => c.toUpperCase());
-                iconObj = (brands as any)[iconKey] || (solids as any)[iconKey];
-              }
-              return (
-                <li class="border border-skin-hue bg-skin-button-muted flex items-center gap-1 rounded-lg px-3 py-1 text-xs text-skin-muted shadow-sm print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
-                  {iconObj && <FontAwesomeIcon iconObj={iconObj} />}
-                  {iconObj && <div class="mr-1" />}
-                  <span>{name}</span>
-                </li>
-              );
-            })
+  {/* Render Primary Languages section first if present */}
+  {primarySkills.length > 0 && (
+    <div class="mb-6">
+      <h3 class="mb-2 text-base font-semibold text-skin-accent print:text-zinc-800">Primary Languages</h3>
+      <ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-2 [&>li>svg]:size-5 [&>li]:text-sm">
+        {primarySkills.map((skill) => {
+          const { name, faIcon } = skill;
+          let iconObj = null;
+          if (faIcon) {
+            const iconKey = "fa" + faIcon.charAt(0).toUpperCase() + faIcon.slice(1).replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+            iconObj = (brands as any)[iconKey] || (solids as any)[iconKey];
           }
-        </ul>
-      </div>
-    ))
-  }
+          return (
+            <li class="border border-skin-hue bg-skin-button-muted flex items-center gap-1 rounded-lg px-3 py-1 text-xs text-skin-muted shadow-sm print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
+              {iconObj && <FontAwesomeIcon iconObj={iconObj} />}
+              {iconObj && <div class="mr-1" />}
+              <span>{name}</span>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  )}
+  {/* Render the rest of the categories */}
+  {otherEntries.map(([category, skillsInCategory]) => (
+    <div class="mb-6">
+      <h3 class="mb-2 text-base font-semibold text-skin-accent print:text-zinc-800">{category}</h3>
+      <ul class="[&>li>svg]:text-skin-hue inline-flex flex-wrap gap-2 [&>li>svg]:size-5 [&>li]:text-sm">
+        {skillsInCategory.map((skill) => {
+          const { name, faIcon } = skill;
+          let iconObj = null;
+          if (faIcon) {
+            const iconKey = "fa" + faIcon.charAt(0).toUpperCase() + faIcon.slice(1).replace(/-([a-z])/g, (_, c) => c.toUpperCase());
+            iconObj = (brands as any)[iconKey] || (solids as any)[iconKey];
+          }
+          return (
+            <li class="border border-skin-hue bg-skin-button-muted flex items-center gap-1 rounded-lg px-3 py-1 text-xs text-skin-muted shadow-sm print:border-none print:bg-transparent print:p-0 print:text-zinc-800">
+              {iconObj && <FontAwesomeIcon iconObj={iconObj} />}
+              {iconObj && <div class="mr-1" />}
+              <span>{name}</span>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  ))}
 </Section>
