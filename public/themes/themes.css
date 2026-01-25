@@ -1,25 +1,27 @@
 @tailwind base;
 @layer base {
   :root {
-    --color-text-base: 0, 0, 0;
+    /* Adapted white theme: gray base, blue matte accent */
+    --color-text-base: 33, 37, 41;
     --color-text-muted: 120, 120, 120;
     --color-text-inverted: 255, 255, 255;
     --color-fill: 245, 245, 245;
     --muted: 200, 200, 200;
-    --color: 249, 115, 22;
-    --color-button-accent: 249, 115, 22;
-    --color-button-accent-hover: 55, 55, 55;
-    --color-button-muted: 244, 239, 238;
+    --color: 96, 165, 250; /* lighter blue accent */
+    --color-button-accent: 96, 165, 250;
+    --color-button-accent-hover: 59, 130, 246;
+    --color-button-muted: 226, 232, 240;
     [data-theme="blue"] {
-      --color-text-base: 15, 23, 42;
-      --color-text-muted: 100, 116, 139;
+      /* Blue theme: gray base, lighter blue accent */
+      --color-text-base: 51, 65, 85; /* gray */
+      --color-text-muted: 120, 120, 120;
       --color-text-inverted: 240, 240, 240;
-      --color-fill: 203, 213, 225;
-      --muted: 148, 163, 184;
-      --color: 59, 130, 246;
-      --color-button-accent: 59, 130, 246;
-      --color-button-accent-hover: 0, 185, 255;
-      --color-button-muted: 226, 232, 240;
+      --color-fill: 226, 232, 240; /* light gray */
+      --muted: 203, 213, 225; /* muted gray */
+      --color: 96, 165, 250; /* lighter blue accent */
+      --color-button-accent: 96, 165, 250;
+      --color-button-accent-hover: 59, 130, 246;
+      --color-button-muted: 203, 213, 225;
     }
     [data-theme="red"] {
       --color-text-base: 28, 25, 23;
@@ -56,25 +58,27 @@
     }
   }
   .dark {
-    --color-text-base: 255, 255, 255;
-    --color-text-muted: 150, 150, 150;
-    --color-text-inverted: 255, 255, 255;
-    --color-fill: 18, 18, 18;
-    --muted: 36, 36, 36;
-    --color: 227, 77, 10;
-    --color-button-accent: 227, 77, 10;
-    --color-button-accent-hover: 231, 121, 43;
-    --color-button-muted: 26, 26, 26;
+    /* Adapted dark theme: gray base, blue matte accent */
+    --color-text-base: 226, 232, 240;
+    --color-text-muted: 148, 163, 184;
+    --color-text-inverted: 30, 41, 59;
+    --color-fill: 30, 41, 59;
+    --muted: 51, 65, 85;
+    --color: 30, 64, 175; /* blue matte accent */
+    --color-button-accent: 30, 64, 175;
+    --color-button-accent-hover: 59, 130, 246;
+    --color-button-muted: 51, 65, 85;
     [data-theme="blue"] {
-      --color-text-base: 248, 250, 252;
+      /* Blue theme dark: gray base, blue matte accent */
+      --color-text-base: 203, 213, 225; /* gray */
       --color-text-muted: 148, 163, 184;
-      --color-text-inverted: 240, 240, 240;
-      --color-fill: 2, 6, 23;
-      --muted: 51, 65, 85;
-      --color: 59, 130, 246;
+      --color-text-inverted: 30, 41, 59;
+      --color-fill: 30, 41, 59; /* dark gray */
+      --muted: 51, 65, 85; /* muted gray */
+      --color: 59, 130, 246; /* blue matte accent */
       --color-button-accent: 59, 130, 246;
-      --color-button-accent-hover: 0, 185, 255;
-      --color-button-muted: 30, 41, 59;
+      --color-button-accent-hover: 30, 64, 175;
+      --color-button-muted: 51, 65, 85;
     }
     [data-theme="red"] {
       --color-text-base: 231, 229, 228;
