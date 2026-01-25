@@ -2,7 +2,7 @@
   "basics": {
     "name": "Nicolas Farabegoli",
     "label": "Software Engineer, Researcher, PhD Student",
-    "image": "/me_avatar.jpg",
+    "image": "/PXL_20240322_130744650.PORTRAIT-small.jpg",
     "email": "nicolas.farabegoli@gmail.com",
     "phone": "+39 340-2876022",
     "url": "https://nicolasfarabegoli.it",
@@ -11,7 +11,7 @@
     "address": "via Bagalona, 599 Bertinoro (FC)",
     "positions": ["Software Engineer", "Researcher", "PhD Student"],
     "summary": "Researcher and software engineer with experience in aggregate computing, edge-cloud continuum, and open-source development. Published and presented over 10 papers in international conferences and journals. Lead developer of multiple frameworks and platforms for distributed and embedded systems.",
-    "theme": "default",
+    "theme": "blue",
     "location": {
       "address": "via Bagalona, 599",
       "postalCode": "47032",
@@ -82,39 +82,39 @@
   "education": [
     {
       "institution": "Alma Mater Studiorum - University of Bologna",
-      "area": "Computer Science and Engineering",
-      "studyType": "Ph.D.",
+      "title": "Ph.D. in Computer Science and Engineering",
       "location": "Cesena, Italy",
-      "startDate": "2022-11-01",
+      "startDate": "2023-11-01",
       "endDate": null,
-      "description": "Research on Aggregate Computing, Deployment models for Cyber-Physical Systems, Edge-Cloud Continuum. Published and presented over 10 papers in international conferences and journals."
+      "description": "Research on Aggregate Computing, Deployment models for Cyber-Physical Systems, Edge-Cloud Continuum. Published and presented over 10 papers in international conferences and journals.",
+      "url": "https://www.unibo.it/sitoweb/nicolas.farabegoli/en"
     },
     {
       "institution": "Alma Mater Studiorum - University of Bologna",
-      "area": "Computer Science and Engineering",
-      "studyType": "Master's Degree",
+      "title": "Master's Degree in Computer Science and Engineering",
       "location": "Cesena, Italy",
       "startDate": "2020-09-01",
       "endDate": "2023-03-01",
       "score": "110/110 cum laude",
-      "description": "Thesis: Design and Implementation of a Portable Framework for Application Decomposition and Deployments in the Cloud-Edge Systems"
+      "description": "Thesis: Design and Implementation of a Portable Framework for Application Decomposition and Deployments in the Cloud-Edge Systems",
+      "url": "https://www.unibo.it/sitoweb/nicolas.farabegoli/en"
     },
     {
       "institution": "Alma Mater Studiorum - University of Bologna",
-      "area": "Computer Science and Engineering",
-      "studyType": "Bachelor's Degree",
+      "title": "Bachelor's Degree in Computer Science and Engineering",
       "location": "Cesena, Italy",
       "startDate": "2016-09-01",
       "endDate": "2020-03-01",
-      "description": "Thesis: An optimized implementation of the Dirac operator on GPGPU"
+      "description": "Thesis: An optimized implementation of the Dirac operator on GPGPU",
+      "url": "https://www.unibo.it/sitoweb/nicolas.farabegoli/en"
     },
     {
       "institution": "Istituto Tecnico Tecnologico Statale B. Pascal",
-      "area": "Electronics and Automation",
-      "studyType": "High School Diploma",
+      "title": "High School Diploma in Electronics and Automation",
       "location": "Cesena, Italy",
       "startDate": "2011-09-01",
-      "endDate": "2016-07-01"
+      "endDate": "2016-07-01",
+      "url": "https://www.ispascalcomandini.it/itt-b-pascal/"
     }
   ],
   "certificates": [
@@ -123,25 +123,27 @@
   "skills": [
     {"name": "C", "level": 3, "category": "Programming Languages"},
     {"name": "C++", "level": 3, "category": "Programming Languages"},
-    {"name": "Bash", "level": 3, "category": "Programming Languages"},
-    {"name": "Java", "level": 4, "category": "Programming Languages"},
-    {"name": "JavaScript", "level": 3, "category": "Programming Languages"},
+    {"name": "Bash", "level": 3, "category": "Programming Languages", "faIcon": "terminal"},
+    {"name": "Java", "level": 4, "category": "Programming Languages", "faIcon": "java"},
+    {"name": "JavaScript", "level": 3, "category": "Programming Languages", "faIcon": "js"},
     {"name": "Kotlin", "level": 5, "category": "Programming Languages"},
-    {"name": "Python", "level": 3, "category": "Programming Languages"},
-    {"name": "Rust", "level": 2, "category": "Programming Languages"},
-    {"name": "Scala", "level": 5, "category": "Programming Languages"},
+    {"name": "Python", "level": 3, "category": "Programming Languages", "faIcon": "python"},
+    {"name": "Rust", "level": 2, "category": "Programming Languages", "faIcon": "rust"},
+    {"name": "Scala", "level": 5, "category": "Programming Languages", "faIcon": "scala"},
     {"name": "TypeScript", "level": 3, "category": "Programming Languages"},
-    {"name": "Android", "level": 4, "category": "Technologies & Tools"},
+    {"name": "Android", "level": 4, "category": "Technologies & Tools", "faIcon": "android"},
     {"name": "Ansible", "level": 3, "category": "Technologies & Tools"},
-    {"name": "Docker", "level": 4, "category": "Technologies & Tools"},
-    {"name": "Embedded Rust", "level": 3, "category": "Technologies & Tools"},
-    {"name": "Git", "level": 5, "category": "Technologies & Tools"},
+    {"name": "Docker", "level": 4, "category": "Technologies & Tools", "faIcon": "docker"},
+    {"name": "Embedded Rust", "level": 3, "category": "Technologies & Tools", "faIcon": "rust"},
+    {"name": "ESP32", "level": 4, "category": "Technologies & Tools"},
+    {"name": "Git", "level": 5, "category": "Technologies & Tools", "faIcon": "git-alt"},
     {"name": "GitHub Actions", "level": 4, "category": "Technologies & Tools"},
-    {"name": "Gradle", "level": 4, "category": "Technologies & Tools"},
-    {"name": "Kubernetes", "level": 2, "category": "Technologies & Tools"},
-    {"name": "Linux", "level": 4, "category": "Technologies & Tools"},
+    {"name": "Gradle", "level": 4, "category": "Technologies & Tools", "faIcon": "gradle"},
+    {"name": "Kubernetes", "level": 2, "category": "Technologies & Tools", "faIcon": "kubernetes"},
+    {"name": "Linux", "level": 4, "category": "Technologies & Tools", "faIcon": "linux"},
     {"name": "MQTT", "level": 4, "category": "Technologies & Tools"},
     {"name": "Proxmox VE", "level": 3, "category": "Technologies & Tools"},
+    {"name": "MySQL", "level": 3, "category": "Technologies & Tools", "faIcon": "database"},
     {"name": "Sbt", "level": 4, "category": "Technologies & Tools"},
     {"name": "Yocto Project", "level": 3, "category": "Technologies & Tools"},
     {"name": "Akka", "category": "Frameworks & Paradigms"},
@@ -151,16 +153,17 @@
     {"name": "FP", "category": "Frameworks & Paradigms"},
     {"name": "Ktor", "category": "Frameworks & Paradigms"},
     {"name": "OOP", "category": "Frameworks & Paradigms"},
-    {"name": "Raspberry Pi", "category": "Frameworks & Paradigms"},
-    {"name": "React", "category": "Frameworks & Paradigms"},
+    {"name": "Raspberry Pi", "category": "Frameworks & Paradigms", "faIcon": "raspberry-pi"},
+    {"name": "React", "category": "Frameworks & Paradigms", "faIcon": "react"},
     {"name": "Spark", "category": "Frameworks & Paradigms"},
-    {"name": "Spring Boot", "category": "Frameworks & Paradigms"},
+    {"name": "Spring Boot", "category": "Frameworks & Paradigms", "faIcon": "spring"},
     {"name": "STM32 HAL", "category": "Frameworks & Paradigms"},
     {"name": "FreeCAD", "category": "Applications"},
     {"name": "Fusion 360", "category": "Applications"},
-    {"name": "IntelliJ IDEA", "category": "Applications"},
+    {"name": "IntelliJ IDEA", "category": "Applications", "faIcon": "java"},
+    {"name": "Gitlab", "category": "Frameworks & Paradigms", "faIcon": "gitlab"},
     {"name": "Kicad", "category": "Applications"},
-    {"name": "Visual Studio Code", "category": "Applications"}
+    {"name": "Visual Studio Code", "category": "Applications", "faIcon": "code"}
   ],
   "languages": [
     {
