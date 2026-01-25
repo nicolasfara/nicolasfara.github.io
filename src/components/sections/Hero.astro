@@ -13,10 +13,14 @@ const SOCIAL_ICONS: Record<string, string> = {
 	GitHub: "github",
 	LinkedIn: "linkedin",
 	X: "x-twitter",
+	Scholar: "graduation-cap", // Use FontAwesome's graduation-cap for Google Scholar
 };
 
 const linkedInfo = profiles.find(({ network }) => network === "LinkedIn");
 const linkedUrl = linkedInfo?.url;
+
+
+const allProfiles = Array.isArray(profiles) ? [...profiles] : [];
 
 const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 ---
@@ -61,16 +65,20 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ");
 					       )
 				       } -->
 				       {
-					       profiles.map(({ network, url }) => {
-					       const faIcon = SOCIAL_ICONS[network];
-					       let iconObj = (brands as any)["fa" + faIcon.charAt(0).toUpperCase() + faIcon.slice(1).replace(/-([a-z])/g, (_, c) => c.toUpperCase())];
-					       if (!iconObj) iconObj = (solids as any)["fa" + faIcon.charAt(0).toUpperCase() + faIcon.slice(1).replace(/-([a-z])/g, (_, c) => c.toUpperCase())];
-					       return (
-						       <a href={url} title={`Visit ${name} profile on ${network}`} target="_blank" rel="noopener noreferrer">
-							       <FontAwesomeIcon iconObj={iconObj} />
-						       </a>
-					       );
-					       })
+						       allProfiles.map(({ network, url }) => {
+						       const faIcon = SOCIAL_ICONS[network];
+						       let iconObj = (brands as any)["fa" + faIcon.charAt(0).toUpperCase() + faIcon.slice(1).replace(/-([a-z])/g, (_, c) => c.toUpperCase())];
+						       if (!iconObj) iconObj = (solids as any)["fa" + faIcon.charAt(0).toUpperCase() + faIcon.slice(1).replace(/-([a-z])/g, (_, c) => c.toUpperCase())];
+						       // Special case for Scholar: use graduation-cap from solids
+						       if (network === "Scholar") {
+							       iconObj = brands.faGoogleScholar;
+						       }
+						       return (
+							       <a href={url} title={`Visit ${name} profile on ${network}`} target="_blank" rel="noopener noreferrer">
+								       <FontAwesomeIcon iconObj={iconObj} />
+							       </a>
+						       );
+						       })
 				       }
 				<!-- <div class="no-print footer-button max-sm:hidden group flex h-8 w-9 cursor-pointer items-center justify-center rounded-md text-skin-hue hover:bg-skin-button-accent hover:text-skin-inverted [&>span]:hover:text-skin-inverted">
 					<svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6 icon-tabler icon-tabler-command"  viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
