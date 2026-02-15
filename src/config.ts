@@ -1,8 +1,8 @@
 export const SITE = {
-  website: "https://astro-paper.pages.dev/", // replace this with your deployed domain
+  website: "https://nicolasfarabegoli.it/", // replace this with your deployed domain
   author: "Nicolas Farabegoli",
   profile: "https://satnaing.dev/",
-  desc: "A minimal, responsive and SEO-friendly Astro blog theme.",
+  desc: "Nicolas Farabegoli's Blog",
   title: "Nicolas Farabegoli",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
@@ -14,7 +14,7 @@ export const SITE = {
   editPost: {
     enabled: true,
     text: "Edit page",
-    url: "https://github.com/satnaing/astro-paper/edit/main/",
+    url: "https://github.com/nicolasfara/nicolasfara.github.io/edit/main/",
   },
   dynamicOgImage: true,
   dir: "ltr", // "rtl" | "auto"
