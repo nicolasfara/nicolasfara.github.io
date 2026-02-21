@@ -1,0 +1,43 @@
+---
+import IconGitHub from "@/assets/icons/IconGitHub.svg";
+import IconRust from "@/assets/icons/IconRust.svg";
+import IconScala from "@/assets/icons/IconScala.svg";
+import IconKotlin from "@/assets/icons/IconKotlin.svg";
+import LinkButton from "./LinkButton.astro";
+
+type Props = {
+  name: string;
+  description: string;
+  href: string;
+  linkTitle: string;
+  languages: string[];
+};
+
+const { name, description, href, linkTitle, languages } = Astro.props;
+
+const languageIcons: Record<string, any> = {
+  rust: IconRust,
+  scala: IconScala,
+  kotlin: IconKotlin,
+};
+---
+
+<li class="relative rounded-lg border border-border bg-neutral-secondary-soft p-6 flex flex-col gap-2 shadow-sm">
+  <div class="font-bold text-lg">{name}</div>
+  <div class="text-sm text-foreground/80">{description}</div>
+  <div class="flex items-center justify-between mt-2">
+    <LinkButton href={href} class="underline decoration-dashed underline-offset-4 hover:text-foreground/75 flex items-center gap-2">
+      <IconGitHub width={20} height={20} class="inline-block" />
+      {linkTitle}
+    </LinkButton>
+    {languages && languages.length > 0 && (
+      <span class="flex items-center gap-1 ms-2">
+        {languages.map(lang => {
+          const key = lang.toLowerCase();
+          const Icon = languageIcons[key];
+          return Icon ? <Icon width={24} height={24} class="inline-block pr-1" /> : null;
+        })}
+      </span>
+    )}
+  </div>
+</li>

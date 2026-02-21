@@ -16,6 +16,44 @@ interface Social {
   icon: (_props: Props) => Element;
 }
 
+interface Project {
+  name: string;
+  description: string;
+  href: string;
+  linkTitle: string;
+  languages: string[];
+}
+
+export const PROJECTS: Project[] = [
+  {
+    name: "Personal Blog",
+    description: "This very blog you're reading, built with Astro and Tailwind CSS.",
+    href: "https://example.com/personal-blog",
+    linkTitle: `View on GitHub`,
+    languages: ["kotlin", "scala"],
+  },
+  {
+    name: "Project Alpha",
+    description: "A web app for managing tasks and projects efficiently.",
+    href: "https://example.com/project-alpha",
+    linkTitle: `View on GitHub`,
+    languages: ["rust"],
+  },
+  {
+    name: "Open Source Library",
+    description: "A JavaScript library for simplifying API interactions.",
+    href: "https://example.com/open-source-library",
+    linkTitle: `View on GitHub`,
+    languages: ["javascript"],
+  },
+  // {
+  //   name: "Portfolio Website",
+  //   description: "A portfolio showcasing my work and skills as a developer.",
+  //   href: "https://example.com/portfolio-website",
+  //   linkTitle: `View on GitHub`,
+  // }
+] as const;
+
 export const SOCIALS: Social[] = [
   {
     name: "GitHub",

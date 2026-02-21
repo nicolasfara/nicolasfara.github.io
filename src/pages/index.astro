@@ -11,7 +11,8 @@ import getSortedPosts from "@/utils/getSortedPosts";
 import IconRss from "@/assets/icons/IconRss.svg";
 import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
-import { SOCIALS } from "@/constants";
+import { SOCIALS, PROJECTS } from "@/constants";
+import ProjectCard from "@/components/ProjectCard.astro";
 
 const posts = await getCollection("blog");
 
@@ -104,9 +105,47 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           </ul>
         </section>
       )
-    }
+    } -->
+  </section>
 
+  <!-- Projects section: stubbed cards -->
+  <section id="projects" class:list={["pt-6 pb-12"]}>
+    <h1 class="text-4xl font-semibold tracking-wide mb-4">Projects</h1>
     {
+      PROJECTS.length > 0 && (
+        <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {PROJECTS.map((project) => (
+            <ProjectCard
+              name={project.name}
+              description={project.description}
+              href={project.href}
+              linkTitle={project.linkTitle}
+              languages={project.languages}
+            />
+          ))}
+        </ul>
+      )
+    }
+    <!-- <ul class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <li class="rounded-lg border border-border bg-neutral-secondary-soft p-6 flex flex-col gap-2 shadow-sm">
+        <div class="font-bold text-lg">EdgeMesh</div>
+        <div class="text-sm text-foreground/80">A mesh networking stack for ARM Cortex-M microcontrollers, enabling distributed coordination in swarms of robots.</div>
+        <a href="#" class="mt-auto text-accent underline underline-offset-2">View project</a>
+      </li>
+      <li class="rounded-lg border border-border bg-neutral-secondary-soft p-6 flex flex-col gap-2 shadow-sm">
+        <div class="font-bold text-lg">CloudSyncer</div>
+        <div class="text-sm text-foreground/80">A tool for seamless data synchronization between edge devices and cloud storage, with built-in conflict resolution.</div>
+        <a href="#" class="mt-auto text-accent underline underline-offset-2">View project</a>
+      </li>
+      <li class="rounded-lg border border-border bg-neutral-secondary-soft p-6 flex flex-col gap-2 shadow-sm">
+        <div class="font-bold text-lg">SwarmSim</div>
+        <div class="text-sm text-foreground/80">A simulator for large-scale collective robotics, supporting custom firmware and real-time visualization.</div>
+        <a href="#" class="mt-auto text-accent underline underline-offset-2">View project</a>
+      </li>
+    </ul> -->
+  </section>
+
+    <!-- {
       recentPosts.length > 0 && (
         <section id="recent-posts" class="pt-12 pb-6">
           <h2 class="text-2xl font-semibold tracking-wide">Recent Posts</h2>
