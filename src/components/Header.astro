@@ -25,7 +25,7 @@ const isActive = (path: string) => {
 <a
   id="skip-to-content"
   href="#main-content"
-  class="absolute start-16 -top-full z-50 bg-background px-3 py-2 hover:text-foreground/75 backdrop-blur-lg transition-all focus:top-4"
+  class="absolute start-16 -top-full z-50 bg-background px-3 py-2 backdrop-blur-lg transition-all hover:text-foreground/75 focus:top-4"
 >
   Skip to content
 </a>
@@ -72,15 +72,15 @@ const isActive = (path: string) => {
         ]}
       >
         <li class="col-span-2">
-          <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
-            Posts
+          <a href="/blog" class:list={{ "active-nav": isActive("/blog") }}>
+            Blog
           </a>
         </li>
-        <li class="col-span-2">
+        <!-- <li class="col-span-2">
           <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
             Tags
           </a>
-        </li>
+        </li> -->
         <li class="col-span-2">
           <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
             About
