@@ -1,7 +1,7 @@
 export const SITE = {
   website: "https://nicolasfarabegoli.it/", // replace this with your deployed domain
   author: "Nicolas Farabegoli",
-  profile: "https://satnaing.dev/",
+  profile: null,
   desc: "Nicolas Farabegoli's Blog",
   title: "Nicolas Farabegoli",
   ogImage: "astropaper-og.jpg",
