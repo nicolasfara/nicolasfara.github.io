@@ -26,32 +26,33 @@ interface Project {
 
 export const PROJECTS: Project[] = [
   {
-    name: "Personal Blog",
-    description: "This very blog you're reading, built with Astro and Tailwind CSS.",
-    href: "https://example.com/personal-blog",
+    name: "Project Emerge",
+    description: "Low-cost, open-source swarm robotics platform with microservices architecture and MQTT middleware for experimenting with cooperative robots.",
+    href: "https://github.com/Project-Emerge",
     linkTitle: `View on GitHub`,
-    languages: ["kotlin", "scala"],
+    languages: ["rust", "scala", "python", "react"],
   },
   {
-    name: "Project Alpha",
-    description: "A web app for managing tasks and projects efficiently.",
-    href: "https://example.com/project-alpha",
+    name: "Rover Firmware",
+    description: "Bare-metal Embedded Rust firmware for ESP32 microcontroller with modular, event-driven architecture using embassy-rs async runtime.",
+    href: "https://github.com/Project-Emerge/rover-firmware",
     linkTitle: `View on GitHub`,
     languages: ["rust"],
   },
   {
-    name: "Open Source Library",
-    description: "A JavaScript library for simplifying API interactions.",
-    href: "https://example.com/open-source-library",
+    name: "Yaair",
+    description: "A no_std-compatible Rust DSL optimized for resource-constrained embedded devices, enabling distributed computing on edge devices.",
+    href: "https://github.com/nicolasfara/yaair",
     linkTitle: `View on GitHub`,
-    languages: ["javascript"],
+    languages: ["rust"],
   },
-  // {
-  //   name: "Portfolio Website",
-  //   description: "A portfolio showcasing my work and skills as a developer.",
-  //   href: "https://example.com/portfolio-website",
-  //   linkTitle: `View on GitHub`,
-  // }
+  {
+    name: "ScaFi 3",
+    description: "Scala 3 re-implementation of the ScaFi framework with an effect-based DSL for engineering distributed IoT systems with safety guarantees.",
+    href: "https://github.com/scafi/scafi3",
+    linkTitle: `View on GitHub`,
+    languages: ["scala"],
+  },
 ] as const;
 
 export const SOCIALS: Social[] = [
